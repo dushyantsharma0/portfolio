@@ -1,0 +1,446 @@
+.animate{
+  
+ animation-name: animi; 
+ animation-duration: 30s;
+ position: relative;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+
+
+}
+
+
+@keyframes animi {
+  from{
+    transform: translate(0);
+}to{
+    transform: translate(-100%);
+}
+}
+
+.oflow{
+   
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+  
+}
+
+
+
+.mybtn{
+  padding: 10px ;
+  border: 1px solid #00000052;
+  color:  #000000ad;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  background: #dddddd;
+  width: 100px;
+  
+ 
+}
+.mybtn::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom:-100%;
+  transition: 0.4s;
+}
+.mybtn:hover::after{
+bottom: 0;
+}
+.mybtn:hover h1{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+ 
+}
+
+.mybtn h1{
+  text-decoration: none;
+  color: #000000ad;
+  z-index: 9;
+  font-weight: 600;
+  position: relative;
+}
+.mybtn:hover a{
+  color: white;
+ 
+  
+}
+
+.mybtn a{
+  text-decoration: none;
+  color: #000000ad;
+  z-index: 9;
+  position: relative;
+  
+}
+
+.namediv{
+  padding: 10px 20px;
+ 
+  color:  #000000ad;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.namediv h1{
+  text-decoration: none;
+  color: #931210;
+  z-index: 9;
+  position: relative;
+  font-weight: 900;
+  text-shadow: 5px 5px 5px #000000;
+  text-decoration: none;
+}
+.namediv::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+ 
+  left: 0;
+  bottom:-100%;
+  transition: 0.4s;
+}
+.namediv:hover::after{
+  bottom: 0;
+  }
+  .namediv:hover h1{
+    color: white;
+    
+  }
+
+  .maintop {
+    position: relative; /* Ensure the parent element has a position value other than static */
+ 
+  }
+  
+  .maintop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://timesproweb-static-backend-prod.s3.ap-south-1.amazonaws.com/Web_Development_Banner_Image_0e476d1ab6.webp');
+    background-position: center;
+    background-size: cover; /* Adjust the background size as needed */
+    opacity: 0.1; /* Adjust the opacity level (0 being fully transparent and 1 being fully opaque) */
+    transition: 1s;
+  }
+  .maintop:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://timesproweb-static-backend-prod.s3.ap-south-1.amazonaws.com/Web_Development_Banner_Image_0e476d1ab6.webp');
+    background-position: center;
+    background-size: cover; /* Adjust the background size as needed */
+    opacity: 0.5; /* Adjust the opacity level (0 being fully transparent and 1 being fully opaque) */
+  }
+ 
+  .namediv abbr {
+    text-decoration: none;
+  }
+
+
+  .img{
+    background-image: url("../src//assets/lg2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+
+
+
+
+
+  .fotermain {
+    position: relative; /* Ensure the parent element has a position value other than static */
+ 
+  }
+  
+  .fotermain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://images.ctfassets.net/23aumh6u8s0i/5gieAxw4n3rxYsyjaAnhGm/aa67599b991ad67b3241bf730fc2a131/security_programming_hero.jpg');
+    background-position: center;
+    background-size: cover; /* Adjust the background size as needed */
+    opacity: 0.1; /* Adjust the opacity level (0 being fully transparent and 1 being fully opaque) */
+    transition: 1s;
+  }
+  .fotermain:hover::before {
+    content: '';
+    position: absolute;
+  
+    background: rgb(255, 193, 193);
+   
+    /* Adjust the background size as needed */
+    opacity: 0.2; /* Adjust the opacity level (0 being fully transparent and 1 being fully opaque) */
+  }
+  .typed-cursor{
+   font-size: 40px;
+  }
+  .multiple-text,.multiple-text2{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    display: inline;
+   
+    background: linear-gradient(to right , rgb(255, 171, 171), rgb(210, 255, 210) );
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .text{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+   
+   
+    background: linear-gradient(to right , rgb(242, 180, 180), rgb(118, 246, 118) );
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+  /* .pentagen {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #38e1cb;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+    border: 5px solid red;
+    padding: 5px;
+    position: relative;
+  } */
+.pentagen{
+  width: 200px;
+  height: 200px;
+  background: #16b9e1;
+  position: relative;
+  border-radius: 50%;
+  border: 20px solid #bce6f1;
+  box-shadow: 0px 10px 30px  #16b9e1;
+ 
+}
+  .inner-imageinner-image{
+position: absolute;
+width: 300px;
+height: 240px;
+border-bottom-left-radius:50% ;
+border-bottom-right-radius:50% ;
+top: -60px;
+left: 50%;
+transform: translate(-50%);
+filter: drop-shadow( );
+filter: brightness( 1.1)
+  }
+
+
+.outer{
+  padding: 3px;
+  background: #ddd;
+  width: 300px;
+  height: 20px;
+  
+}
+  .inner{
+  animation-name: inners;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  width: 0%;
+  height: 100%;
+  
+
+  }
+
+  /* @keyframes inners {
+    from{
+      width: 0%;
+    }to{
+      width: 95%;
+    }
+
+  } */
+  .inner2{
+    animation-name: inners2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    width: 0%;
+    height: 100%;
+    background: #6c2599;
+  
+    }
+  
+    /* @keyframes inners2 {
+      from{
+        width: 0%;
+      }to{
+        width: 80%;
+      }
+  
+    } */
+    .inner3{
+      animation-name: inners3;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      width: 0%;
+      height: 100%;
+      background: #dc7b1b;
+      
+    
+      }
+/*     
+      @keyframes inners3 {
+        from{
+          width: 0%;
+        }to{
+          width: 70%;
+        }
+    
+      } */
+      .inner4{
+        animation-name: inners4;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        width: 0%;
+        height: 100%;
+        background: #119e4c;
+        
+      
+        }
+/*       
+        @keyframes inners4 {
+          from{
+            width: 0%;
+          }to{
+            width: 65%;
+          }
+      
+        } */
+        .inner5{
+          animation-name: inners5;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          width: 0%;
+          height: 100%;
+          background: #41f352;
+          
+        
+          }
+        
+          /* @keyframes inners5 {
+            from{
+              width: 0%;
+            }to{
+              width: 68%;
+            }
+        
+            
+          } */
+          .inner6{
+            animation-name: inners6;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            width: 0%;
+            height: 100%;
+            background: #db46a4;
+            
+          
+            }
+          
+            /* @keyframes inners6 {
+              from{
+                width: 0%;
+              }to{
+                width: 77%;
+              }
+          
+            } */
+        
+      
+            .inner7{
+              animation-name: inners7;
+              animation-duration: 3s;
+              animation-timing-function: linear;
+              width: 0%;
+              height: 100%;
+              background: #b3ce2a;
+              
+            
+              }
+/*             
+              @keyframes inners7 {
+                from{
+                  width: 0%;
+                }to{
+                  width: 85%;
+                }
+            
+              } */
+              .inner8{
+                animation-name: inners8;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                width: 0%;
+                height: 100%;
+                background: #0abb65;
+                
+              
+                }
+              
+                /* @keyframes inners8 {
+                  from{
+                    width: 0%;
+                  }to{
+                    width:60%;
+                  }
+              
+                } */
+                .inner9{
+                  animation-name: inners9;
+                  animation-duration: 3s;
+                  animation-timing-function: linear;
+                  width: 0%;
+                  height: 100%;
+                  background: rgb(216, 54, 54);
+                  
+                
+                  }
+                
+                  /* @keyframes inners9 {
+                    from{
+                      width: 0%;
+                    }to{
+                      width: 69%;
+                    }
+                
+                  } */
+                 
+                  body {
+                    background-image: url('../src/assets/bg.png');
+                    /* Additional properties for background styling can be added here */
+                    color: wheat;
+                  }
