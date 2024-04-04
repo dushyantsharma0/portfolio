@@ -13,24 +13,25 @@ import $ from 'jquery'
 
 const Projects = () => {
    $(document).ready(() => {
-      $('.myprj').mouseenter(()=>{
-         $('.one1').show(200,function(){
-            $('.two2').show(200,function(){
-               $('.three3').show(200,function(){
-                  $('.four4').show(200,function(){
-                     $('.five5').show(200,function(){
-                        $('.six6').show(200,function(){
-                           $('.seven7').show(200,function(){
-                              $('.eight8').fadeIn(200)
-                           })
-                        })
-                     })
-                  })
-               })
-            })
-         })
-      })
-   })
+      $('.myprj').on('mouseenter touchstart', () => {
+        $('.one1').show(200, () => {
+          $('.two2').show(200, () => {
+            $('.three3').show(200, () => {
+              $('.four4').show(200, () => {
+                $('.five5').show(200, () => {
+                  $('.six6').show(200, () => {
+                    $('.seven7').show(200, () => {
+                      $('.eight8').fadeIn(200);
+                    });
+                  });
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+    
   return (
  <div id='project'>
     <h1 className='text myprj'>PROJECTS</h1>

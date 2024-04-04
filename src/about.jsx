@@ -5,7 +5,7 @@ import $ from  'jquery'
 
 const About = () => {
   $(document).ready(function() {
-    $('#about').mouseenter(function() {
+    $('.about').on('mouseenter touchstart', () => {
       $('.heding').show(1000)
     })
   })
@@ -20,7 +20,7 @@ const About = () => {
       };
     
   return (
-    <div id='about'className=' w-[100%]' >
+    <div id='about'className=' about w-[100%]' >
   
       <Paper className=' w-[100wh]  md:w-max' sx={{ margin:'0 auto', padding:'10px', borderRadius:'15px' }}>
       <h1 className='text-center text'>ABOUT US</h1>

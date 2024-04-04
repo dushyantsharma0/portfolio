@@ -15,11 +15,10 @@ import Projects from './projects';
 const Header = () => {
 const [showpic, setshowpic] = useState(false)
 $(document).ready(function() {
-  $('.showw').mouseenter(function () {
-    setshowpic(true)
-    
-  })
-})
+  $('.showw').on('mouseenter touchstart', function () {
+    setshowpic(true);
+  });
+});
 
  useEffect(() => {
     const script = document.createElement('script');

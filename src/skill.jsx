@@ -12,7 +12,7 @@ const Skills = (props) => {
       }
     });
   $(ready).ready(function(){
-   $('.mainskills').mouseenter(function(){
+   $('.mainskills').scrollTop(function(){
       $('.inner').animate({width:'99%'},300,function(){
          $('.inner2').animate({width:'80%'},300,function(){
             $('.inner3').animate({width:'70%'},300,function(){
