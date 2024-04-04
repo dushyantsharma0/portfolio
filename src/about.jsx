@@ -1,6 +1,6 @@
 import { Paper, Typography } from '@mui/material'
 import React from 'react'
-import pdf from '../src/assets/cv.pdf'
+import pdf from '../src/assets/cv2.pdf'
 import $ from  'jquery'
 
 const About = () => {
