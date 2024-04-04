@@ -6,32 +6,30 @@ const Skills = (props) => {
       if (props.show == true) {
         $('.img').show(500, function(){
           $('.first').show(500, function(){
-            $('.second').show(500);
-          });
-        });
-      }
-    });
-  $(ready).ready(function(){
-   $('.mainskills').scrollTop(function(){
-      $('.inner').animate({width:'99%'},300,function(){
-         $('.inner2').animate({width:'80%'},300,function(){
-            $('.inner3').animate({width:'70%'},300,function(){
-               $('.inner4').animate({width:'65%'},300,function(){
-                  $('.inner5').animate({width:'68%'},300,function(){
-                     $('.inner6').animate({width:'77%'},300,function(){
-                        $('.inner7').animate({width:'85%'},300,function(){
-                           $('.inner8').animate({width:'60%'},300,function(){
-                              $('.inner9').animate({width:'69%'},300)
+            $('.second').show(500,function(){
+               $('.inner').animate({width:'99%'},200,function(){
+                  $('.inner2').animate({width:'80%'},200,function(){
+                     $('.inner3').animate({width:'70%'},200,function(){
+                        $('.inner4').animate({width:'65%'},200,function(){
+                           $('.inner5').animate({width:'68%'},200,function(){
+                              $('.inner6').animate({width:'77%'},200,function(){
+                                 $('.inner7').animate({width:'85%'},200,function(){
+                                    $('.inner8').animate({width:'60%'},200,function(){
+                                       $('.inner9').animate({width:'69%'},200)
+                                    })
+                                 })
+                              })
                            })
                         })
                      })
                   })
                })
-            })
-         })
-      })
-   })
-  })
+            });
+          });
+        });
+      }
+    });
+// 2
 // $(document).ready(function () {
   
 // })
